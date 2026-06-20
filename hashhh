@@ -1,0 +1,15 @@
+import hashlib
+
+text = input("📝 Enter text to hash: ")
+
+# Generate MD5 hash
+md5_hash = hashlib.md5(text.encode()).hexdigest()
+
+# Generate SHA-256 hash
+sha256_hash = hashlib.sha256(text.encode()).hexdigest()
+
+print("\n🔑 MD5 Hash:")
+print(md5_hash)
+
+print("\n🛡️ SHA-256 Hash:")
+print(sha256_hash)
